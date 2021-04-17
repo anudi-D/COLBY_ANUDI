@@ -286,7 +286,6 @@ LabelBase.register(name = "MV Boli",fn_regular= "mvboli.ttf")
 
 KV = Builder.load_file('COLBY_design.kv')
 
-Window.size = (400,650)
 
 class chatbot(App):
     def on_pause(self):
