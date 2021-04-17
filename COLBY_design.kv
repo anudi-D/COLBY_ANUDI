@@ -1,0 +1,723 @@
+WindowManager:
+    Home:
+    Chat:
+    Login:
+
+<Home>:
+    name:"Home"
+
+
+    GridLayout:
+        cols:1
+        size: root.width,root.height
+        Carousel:
+            direction:"bottom"
+
+
+            BoxLayout:
+                orientation: "vertical"
+                size: root.width,root.height
+                Label:
+                    text:"Welcome!"
+                    font_name: "Century Gothic"
+                    background_color:(1,1,1,.5)
+                    font_size: 30
+                    canvas.before:
+                        Color:
+                            rgba: self.background_color
+                        Rectangle:
+                            size: self.size
+                            pos: self.pos
+                    color: (18/255, 61/255, 231/255,1)
+                    size_hint_y:(None)
+                    height:75
+                    pos_hint:{"top":1}
+
+
+                Label:
+                    text:" Here you can meet your best\n bot friend who will be there for\n you anytime you want."
+                    font_name:"Myriad CAD"
+                    canvas.before:
+                        Color:
+                            rgba: self.background_color
+                        Rectangle:
+                            size: self.size
+                            pos: self.pos
+
+                    size_hint_y:(None)
+                    height:85
+                    color:(0,0,0,1)
+                    background_color: (81/255,255/255,246/255,1)
+                    font_size: 16
+
+                Label:
+                    text:"Meet,"
+                    font_size:19
+                    font_name:"Calibril"
+
+                    background_color:(143/255, 35/255, 243/255,16/255)
+                    color:(15/255,82/255,14/255,1)
+                    canvas.before:
+                        Color:
+                            rgba: self.background_color
+                        Rectangle:
+                            size: self.size
+                            pos: self.pos
+
+                    size_hint:(None,None)
+                    width:155
+                    height:35
+                    pos_hint: {"y":.5}
+
+
+                Label:
+                    markup: True
+                    text:"COL[color=#e7ed36]BY[/color]"
+                    size_hint_y:(None)
+
+                    height:105
+                    text_size: self.size
+                    valign:"top"
+                    halign: "center"
+                    font_name:"Impact"
+                    font_size:90
+                    canvas.before:
+                        Color:
+                            rgba: self.background_color
+                        Rectangle:
+                            size: self.size
+                            pos: self.pos
+                    color: (31/255,216/255,83/255,1)
+                    background_color:(81/255,255/255,246/255,1)
+
+
+                Label:
+
+                    font_name:"SolidWorks GDT"
+                    font_size: 15
+                    spacing:10
+                    background_color:(141/255,207/255,244/255,.6)
+                    canvas.before:
+                        Color:
+                            rgba: self.background_color
+                        Rectangle:
+                            size: self.size
+                            pos: self.pos
+
+                    text: "Cure Of Loneliness"
+                    color:(0,0,0,1)
+                    size_hint: (None,None)
+                    height: 25
+                    width:250
+                    pos_hint:{"center_x":0.5}
+
+                Image:
+                    source:"col.png"
+                    size_hint_y:(None)
+                    height:150
+                    pos_hint:{"bottom":1}
+                    spacing:30
+
+                Label:
+
+                    text:" I will make you happy whenever you feel lonely,\n I can be your best friend.  "
+                    font_name:"Century Gothic"
+                    valign:"center"
+                    size_hint:(None,None)
+                    spacing:45
+                    height:70
+                    width:350
+                    text_size: self.size
+                    pos_hint:{"center_x":.54}
+                    font_size: 13
+                    canvas.before:
+                        Color:
+                            rgba: self.background_color
+                        Rectangle:
+                            size: self.size
+                            pos: self.pos
+
+                    background_color: (81/255,255/255,246/255,1)
+                    color:(0,0,0,1)
+
+
+                RoundedButton:
+                    id:login
+                    text:"Login"
+                    text_size: self.size
+                    halign:"center"
+                    valign:'center'
+                    font_name: "Century Gothic"
+                    color:(0/255,234/255,255/255,1)
+                    size_hint:(None,None)
+                    height:30
+                    width:95
+                    pos_hint:{"x":.65,"y":.3}
+                    on_release:
+                        app.root.current = "Login"
+                        root.manager.transition.direction = "left"
+
+
+
+
+                Label:
+                    size_hint_y:(None)
+                    height:45
+                    canvas.before:
+                        Color:
+                            rgba: self.background_color
+                        Rectangle:
+                            size: self.size
+                            pos: self.pos
+                    background_color:(81/255,255/255,246/255,1)
+
+
+                Button:
+                    text:"Go down!"
+                    size_hint_y:(None)
+                    height:30
+                    pos_hint:{"bottom":1}
+                    canvas.before:
+                        Color:
+                            rgba: self.background_color
+                        Rectangle:
+                            size: self.size
+                            pos: self.pos
+                    background_color:(1,1,1,.2)
+                    background_normal:""
+
+
+            GridLayout:
+                cols:1
+
+                Label:
+                    background_color:(224/255,255/255,255/255,1)
+                    canvas.before:
+                        Color:
+                            rgba: self.background_color
+                        Rectangle:
+                            size: self.size
+                            pos: self.pos
+
+                    BoxLayout:
+                        orientation:"vertical"
+                        size: root.width,root.height
+
+
+
+                        Label:
+
+                            text:" I'm here to cheer you up whenever \nyou feel lonely or depressed."
+                            font_size:16
+                            text_size: self.size
+                            halign:"center"
+                            valign:'center'
+
+                            font_name:"Century Gothic"
+                            background_color:(178/255,255/255,255/255,1)
+                            size_hint_y:(None)
+                            height: 80
+                            color:(99/255,42/106/255,114/255,.5)
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+
+                            pos_hint:{"top":1,"center_x":.5}
+
+                        Label:
+                            font_name:"Segoe UI"
+
+
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                            size_hint_y:(None)
+                            height:70
+                            text:" If you are feeling lonely talking to someone helps."
+                            font_size:15
+                            color:(0,0,0,1)
+                            background_color:(224/255,255/255,255/255,1)
+
+                        Label:
+                            size_hint_y:(None)
+                            height:56
+
+                            text:" Check these websites below!"
+                            text_size: self.size
+                            halign:"left"
+                            valign:'center'
+                            font_name:"Comic Sans MS"
+                            font_size:15
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+
+                            background_color:(224/255,255/255,255/255,1)
+                            color:(0/255,0/255,139/255,1)
+                            pos_hint:{"center_x":.55}
+
+                        Button:
+                            text:"* http://1333.lk/"
+                            font_name:"Comic Sans MS"
+                            color:(0/255,139/255,139/255,1)
+                            spacing:30
+                            background_color:(224/255,255/255,255/255,1)
+                            on_release: root.website1()
+                            size_hint:(None,None)
+                            height:22
+                            weight:55
+                            pos_hint:{"center_x":.32}
+                            background_normal:""
+
+                        Button:
+                            text:"* srilankasumithrayo.lk"
+                            font_name:"Comic Sans MS"
+                            color:(0/255,139/255,139/255,1)
+                            spacing:30
+                            background_color:(224/255,255/255,255/255,1)
+                            on_release: root.website2()
+                            size_hint:(None,None)
+                            height:22
+                            weight:55
+                            pos_hint:{"center_x":.37}
+                            background_normal:""
+
+                        Label:
+                            text:" You can call ccc, sumithrayo numbers."
+                            font_name:"Comic Sans MS"
+                            text_size: self.size
+                            halign:"left"
+                            valign:'center'
+                            font_size:15
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+
+                            background_color:(224/255,255/255,255/255,1)
+                            color:(0/255,0/255,139/255,1)
+                            size_hint_y:(None)
+                            height:56
+                            pos_hint:{"center_x":.55}
+
+                        Button:
+                            text:"CCC: 1333"
+                            background_normal:""
+                            background_color:(224/255,255/255,255/255,1)
+                            color:(0/255,139/255,139/255,1)
+                            size_hint:(None,None)
+                            height:20
+                            width:80
+                            pos_hint:{"center_x":.27}
+
+                        Button:
+                            text:"Sumithrayo: 0112682535"
+                            background_normal:""
+                            background_color:(224/255,255/255,255/255,1)
+                            color:(0/255,139/255,139/255,1)
+                            size_hint:(None,None)
+                            height:20
+                            width:80
+                            pos_hint:{"center_x":.385}
+
+                        Label:
+                            text:"Talk to a trained counsellor confidentially without\njudgement."
+                            text_size: self.size
+                            halign:"left"
+                            valign:'center'
+                            font_name:"Comic Sans MS"
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+
+                            color:(0/255,0/255,139/255,1)
+                            background_color:(224/255,255/255,255/255,1)
+                            size_hint_y:(None)
+                            height:70
+                            pos_hint:{"center_x":.55}
+
+
+
+
+                        Label:
+                            size_hint:(None,None)
+                            height:30
+                            canvas.before:
+                                Color:
+                                    rgba: self.background_color
+                                Rectangle:
+                                    size: self.size
+                                    pos: self.pos
+                            background_color:(224/255,255/255,255/255,1)
+
+                        GridLayout:
+                            cols:2
+                            Image:
+                                spacing:30
+                                source:"COLBYPIC.jpg"
+                                size_hint:(None,None)
+                                height:170
+                                width:150
+                                pos_hint:{"x":.08}
+
+
+                            BoxLayout:
+                                orientation:"vertical"
+                                size:root.width,root.height
+
+                                Label:
+
+                                    text:"Or you can talk with me!"
+                                    font_name:"Segoe Print"
+                                    pos_hint:{"top":1}
+                                    background_color:(81/255,255/255,246/255,1)
+                                    color:(70/255,130/255,180/255)
+                                    canvas.before:
+                                        Color:
+                                            rgba: self.background_color
+                                        Rectangle:
+                                            size:self.size
+                                            pos:self.pos
+                                    size_hint:(None,None)
+                                    height:30
+                                    width:230
+                                    pos_hint:{"top":.01,"center_x":.5}
+
+                                Label:
+                                    size_hint_y:(None)
+                                    height:30
+                                    background_color:(234/255,245/255,245/255,1)
+
+
+
+
+                                Button:
+
+                                    background_normal:""
+
+                                    font_name:"Segoe Print"
+                                    text:"Go ahead and\nmeet COLBY!"
+                                    font_size:15
+                                    background_color:(178/255,255/255,255/255,1)
+                                    color:(38/255,78/255,226/255,1)
+                                    size_hint:(None,None)
+                                    height:60
+                                    width:120
+                                    pos_hint:{"center_x":.5,"y":.3}
+                                    text_size: self.size
+                                    halign:"center"
+                                    valign:'center'
+                                    on_release:
+                                        app.root.current = "Login"
+                                        root.manager.transition.direction = "left"
+
+                                Label:
+                                    size_hint_y:(None)
+                                    height:20
+                                    background_color:(224/255,255/255,255/255,1)
+                                    canvas.before:
+
+                                        Color:
+
+                                            rgba: self.background_color
+                                        Rectangle:
+
+                                            size:self.size
+                                            pos:self.pos
+
+
+<Login>:
+    name:"Login"
+    Label:
+        canvas.before:
+            Color:
+                rgba: self.background_color
+            Rectangle:
+                size:self.size
+                pos:self.pos
+        background_color:(224/255,255/255,255/255,1)
+        FloatLayout:
+            size:root.width,root.height
+            Button:
+                text:"Back"
+                size_hint:(None,None)
+                height:30
+                width:70
+                background_color:(96/255,130/255,182/255,1)
+
+                pos_hint:{"x":0,"y":.955}
+                background_normal:""
+                on_release:
+                    app.root.current = "Home"
+                    root.manager.transition.direction = "right"
+            Label:
+                size_hint:(None,None)
+                width:230
+                height:345
+                canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size:self.size
+                        pos:self.pos
+                background_color:(81/255,255/255,246/255,1)
+                pos_hint:{"center_x":.509, "center_y":.5}
+
+            Label:
+                id:user
+                text:"username"
+                color:(65/255,125/255,193/255,1)
+                font_size:18
+                font_name:"Artifakt Element"
+                size_hint:(None,None)
+                background_color:(81/255,255/255,246/255,1)
+                canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size:self.size
+                        pos:self.pos
+                height:30
+                width:230
+                pos_hint:{"center_y":.7,"center_x":.509}
+
+            TextInput:
+                id:name_input
+                multiline:False
+                font_size:13
+                color:(188/255,12/255,241/255,1)
+                font_name:"Papyrus"
+                pos_hint:{"center_x":.509,"center_y":.63}
+                size_hint:(None,None)
+                height:29
+                width:200
+                text_size: self.size
+
+                valign:'center'
+
+            Label:
+                id:passw
+                text:"Password"
+                font_size:18
+                font_name:"Artifakt Element"
+                color:(65/255,125/255,193/255,1)
+                size_hint:(None,None)
+                background_color:(81/255,255/255,246/255,1)
+                canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size:self.size
+                        pos:self.pos
+                height:30
+                width:230
+                pos_hint:{"center_y":.55,"center_x":.509}
+
+            TextInput:
+                id:password
+                multiline:False
+                font_size:13
+                color:(188/255,12/255,241/255,1)
+                font_name:"Papyrus"
+                pos_hint:{"center_x":.509,"center_y":.48}
+                size_hint:(None,None)
+                height:29
+                width:200
+                text_size: self.size
+                valign:'center'
+
+            Button:
+                id:Login_button
+                text:"Login"
+                font_name:"MV Boli"
+                size_hint:(None,None)
+                height:30
+                width:90
+                pos_hint:{"center_x":.52, "y":.3}
+                background_color:(73/255,151/255,208/255,1)
+                background_normal:""
+                on_release:
+                    root.login_save()
+                    app.root.current = "chat" if root.login_save() == True else "Login"
+                    root.manager.transition.direction = "left"
+
+<Chat>:
+    name:"chat"
+
+    GridLayout:
+        cols:1
+
+        Label:
+            background_color:(1,1,1,1)
+            canvas.before:
+
+                Color:
+
+                    rgba: self.background_color
+                Rectangle:
+
+                    size:self.size
+                    pos:self.pos
+
+
+
+
+            BoxLayout:
+                orientation:"vertical"
+                size:root.width,root.height
+
+                Button:
+                    text:"<-- Home"
+                    background_normal:""
+                    size_hint:(None,None)
+                    height:30
+                    width:75
+                    pos_hint:{"top":1,"x":0}
+                    background_color:(254/255,246/255,104/255,1)
+                    color:(3/255,7/255,137/255,1)
+                    font_size:14
+                    on_release:
+                        app.root.current = "Home"
+                        root.manager.transition.direction = "right"
+
+                    text_size: self.size
+                    halign:"center"
+                    valign:"center"
+
+                Image:
+                    source:"chatbot1.png"
+                    size_hint_y:(None)
+                    height:265
+
+                Label:
+                    id: showcolby
+                    markup: True
+                    size_hint_y:(None)
+                    font_name:"Papyrus"
+                    height:130
+                    text_size: self.size
+
+                    font_size:15
+
+                    background_color:(129/255,235/255,247/255,1)
+                    color:(0,0,0,1)
+                    canvas.before:
+
+                        Color:
+
+                            rgba: self.background_color
+                        Rectangle:
+
+                            size:self.size
+                            pos:self.pos
+
+                    text:"Hi, I'm COLBY"
+                    halign:"center"
+                    valign:"center"
+
+                FloatLayout:
+
+                    size:root.width,root.height
+                    Button:
+                        id:start_send
+                        text:"start"
+                        size_hint:(None,None)
+                        height:36
+                        width:100
+                        text_size: self.size
+                        halign:"center"
+                        valign:"center"
+                        background_normal:""
+                        pos_hint:{"center_x":.876,"y":.001}
+                        color:(1,1,1,1)
+                        background_color:(0,0,1,1)
+                        on_press: root.on_start()
+
+                    Label:
+                        id:helplabel
+                        text:"You can type your text below!"
+                        font_size: 15
+                        pos_hint:{"center_y":.1,"center_x":.375}
+                        text_size: self.size
+                        halign:"center"
+                        valign:"center"
+                        canvas.before:
+                            Color:
+                                rgba: self.background_color
+                            Rectangle:
+                                size:self.size
+                                pos:self.pos
+                        color:(138/255,134/255,136/255,1)
+                        size_hint:(None,None)
+                        height:43
+                        width:300
+                        background_color:(196/255,203/255,203/255,.4)
+
+
+                TextInput:
+                    id:namelabel
+
+                    background_color:(1,1,1,1)
+
+                    font_size:15
+                    size_hint_y:(None)
+                    height:90
+
+
+
+
+<RoundedButton@Button>
+    background_color:(0,0,0,0)
+    background_normal:""
+    canvas.before:
+        Color:
+            rgba:(29/255,42/255,99/255,.7)
+
+        RoundedRectangle:
+            size:self.size
+            pos:self.pos
+            radius:[12]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
