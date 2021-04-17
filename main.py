@@ -34,10 +34,6 @@ for elem in feeling:
 
 print(mood)
 
-link = '<a href = "https://www.who.int/publications/i/item/9789240003927?gclid=Cj0KCQiApsiBBhCKARIsAN["> here </a>'
-
-link_work = link.format
-
 
 with open('Bot_question.csv', mode='r') as inp:
     reader = csv.reader(inp)
