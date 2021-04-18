@@ -286,11 +286,8 @@ class chatbot(App):
         Chat.ids.passw.text = "Password"
 
     def on_resume(self):
-        if Chat.ids.namelabel.text != password and Chat.ids.namelabel.text != name:
-            self.password_check()
+        pass
 
-        else:
-            pass
 
 
     def build(self):
