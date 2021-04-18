@@ -1,11 +1,4 @@
 import kivy
-from kivy.config import Config
-
-
-Config.set('graphics', 'resizable', True)
-
-
-
 from kivy.app import App
 from kivy.uix.widget import Widget
 from kivy.lang import Builder
